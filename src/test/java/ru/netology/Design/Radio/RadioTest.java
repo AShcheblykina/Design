@@ -28,5 +28,50 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void ChooseLastToStation() {
+        Radio cond = new Radio();
 
+        cond.ChooseLastStation();
+
+        int expected = 9;
+        int actual = cond.StationNumber;
+
+        Assertions.assertEquals(expected,actual);
+
+    }
+    @Test
+    public void ChooseMaxToSoundVolume() {
+        Radio cond = new Radio();
+
+        cond.ChooseMaxSoundVolume();
+
+        int expected = 10;
+        int actual = cond.SoundVolume;
+
+        Assertions.assertEquals(expected,actual);
+
+    }
+    @Test
+    public void ChooseFirstToStation() {
+        Radio cond = new Radio();
+
+        cond.ChooseFirstStation();
+
+        int expected = 1;
+        int actual = cond.StationNumber;
+
+        Assertions.assertEquals(expected,actual);
+    }
+    @Test
+    public void ChooseMiniToSoundVolume() {
+        Radio cond = new Radio();
+
+        cond.ChooseMiniSoundVolume();
+
+        int expected = 1;
+        int actual = cond.SoundVolume;
+
+        Assertions.assertEquals(expected,actual);
+    }
 }
